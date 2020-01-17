@@ -2,20 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
 body {
-    max-width: 50em;
+    width: minmax(8em,50em);
     margin: 2em auto;
-    display:grid;
-    grid-template-columns: 60% 1fr;
-    grid-column-gap: 5em;
-
+    padding: 5%;
     font-family: 'Open Sans', sans-serif;
     color: #2c2f33
-    /*font-size: 1.4vw;*/
 }
 
 header>h1 {
     border-style: none;
-    font-size: 3em;
+    font-size: 9.2vw;
     margin:0;
     color: black;
 }
@@ -49,20 +45,34 @@ h3 {
     margin: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.contacts p {
+    margin: 0 1em;
+    display: grid;
+    grid-columns-template: 1fr;
 }
 
-li {
-    display: inline;
+a {
+    color: #7289da;
 }
 
 .contacts a {
-    color: #7289da;
-    display: inline-block;
-    margin: 0 1em;
-    float: right;
     font-size: 1.1em;
     font-variant: small-caps;
+}
+
+
+@media (min-width: 600px) {
+    body {
+        display:grid;
+        grid-template-columns: 60% 1fr;
+        grid-column-gap: 5em;
+
+    }
+
+    header>h1 {
+        border-style: none;
+        font-size: 2.9em;
+        margin:0 1vw;
+        color: black;
+    }
 }
