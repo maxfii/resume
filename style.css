@@ -69,10 +69,13 @@ a {
 
     }
 
+    header {
+        margin:0 1vw;
+    }
+
     header>h1 {
         border-style: none;
-        font-size: 2.9em;
-        margin:0 1vw;
+        font-size: 5.1vw;
         color: black;
     }
 }
